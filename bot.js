@@ -474,10 +474,10 @@ client.on('message', message => {
   if (!message.content.startsWith(PREFIX)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "439187325503930369") return;
+  if (message.author.id !== "475797943480352789") return;
  
 if (message.content.startsWith(PREFIX + 'setstream')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/darkknite55");
+  client.user.setGame(argresult, "https://www.twitch.tv/ledom999");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 }
@@ -1429,10 +1429,10 @@ client3.on('message', message => {
   if (!message.content.startsWith(PREFIX3)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "414477438869831682") return;
+  if (message.author.id !== "475797943480352789") return;
  
 if (message.content.startsWith(PREFIX3 + 'setstream')) {
-  client3.user.setGame(argresult, "https://www.twitch.tv/darkknite55");
+  client3.user.setGame(argresult, "https://www.twitch.tv/ledom999");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 }
@@ -1907,7 +1907,7 @@ client.on('message', message => {
   if (!message.content.startsWith(PREFIX5)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "439187325503930369") return;
+  if (message.author.id !== "475797943480352789") return;
  
 if (message.content.startsWith(PREFIX5 + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/darkknite55");
@@ -2268,8 +2268,8 @@ client.on('message', async msg => { // eslint disable line
             ]
           }
         }).then(message =>{message.delete(2000)})
-    } else if (msg.content.startsWith(`${PREFIX}resume`)) {
-        console.log(`${msg.author.tag} has been used the ${PREFIX}resume command in ${msg.guild.name}`);
+    } else if (msg.content.startsWith(`${PREFIX5}resume`)) {
+        console.log(`${msg.author.tag} has been used the ${PREFIX5}resume command in ${msg.guild.name}`);
  
         if (serverQueue && !serverQueue.playing) {
             serverQueue.playing =  true;
@@ -2382,23 +2382,23 @@ function play(guild, song) {
 }
  
 client.on('message', message => {
-  if (!message.content.startsWith(PREFIX)) return;
+  if (!message.content.startsWith(PREFIX5)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "439187325503930369") return;
+  if (message.author.id !== "475797943480352789") return;
  
-if (message.content.startsWith(PREFIX + 'setstream')) {
+if (message.content.startsWith(PREFIX5 + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/ledom999");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 }
  
-if (message.content.startsWith(PREFIX + 'setname')) {
+if (message.content.startsWith(PREFIX5 + 'setname')) {
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`Username Changed To **${argresult}**`)
   return message.reply("You Can change the username 2 times per hour");
 }
-if (message.content.startsWith(PREFIX + 'setavatar')) {
+if (message.content.startsWith(PREFIX5 + 'setavatar')) {
   client.user.setAvatar(argresult);
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
